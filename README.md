@@ -29,7 +29,7 @@ Tech Stack:
 
 Project Structure:
 
-    finance_dashboard/
+    Finance_Dashboard/
     ├── main.py                 # App entry point & CORS config
     ├── seed.py                 # Database initialization & sample users
     ├── app/
@@ -57,7 +57,7 @@ Installation & Setup:
     Clone the repository:
 
     git clone <your-repo-url>
-    cd finance_dashboard
+    cd Finance_Dashboard
     
     Install dependencies:
 

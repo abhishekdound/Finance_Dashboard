@@ -46,6 +46,7 @@ Project Structure:
 Configuration (.env):
 
     Create a .env file in the root directory to store your security credentials:
+
     SECRET_KEY=your_super_secret_key_here
     ALGORITHM=HS256
     ACCESS_TOKEN_EXPIRE_MINUTES=30
@@ -54,20 +55,24 @@ Configuration (.env):
 Installation & Setup:
 
     Clone the repository:
+
     git clone <your-repo-url>
     cd finance_dashboard
     
     Install dependencies:
+
     Using uv (recommended for speed):
     uv add fastapi "uvicorn[standard]" sqlalchemy pydantic-settings "python-jose[cryptography]" "passlib[bcrypt]" python-multipart "bcrypt==4.0.1"
     
     
     Seed the Database:
+
     This creates the required Roles and initial Users (Admin, Analyst, Viewer).
     uv run seed.py
     
     
     Run the Server:
+
     uv run uvicorn main:app --reload
 
 
@@ -99,10 +104,12 @@ API Endpoints Reference:
 Accessing the API:
 
     Documentation:
+
         Access the interactive Swagger UI at:
              127.0.0.1/Your-Port/docs
 
     Login Request (Postman/Frontend):
+
         To get your access token, send a POST request:
         URL: http://127.0.0.1:Your-Port/token
         Body Type: x-www-form-urlencoded
@@ -113,8 +120,7 @@ Accessing the API:
 
     Default Test Credentials:
     
-        Role	   Email	            Password
-    
+        Role	   Email	            Password    
         Admin	   admin@test.com	    pass123
         Analyst	   analyst@test.com	    pass123
         Viewer	   viewer@test.com	    pass123
